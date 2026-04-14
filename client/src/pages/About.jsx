@@ -3,7 +3,7 @@ import { LeaderCard } from "../components/LeaderCard";
 export const About = () => {
   return (
     <>
-      <section className=" bg-black">
+      <section className=" bg-black mt-20">
         <div className=" text-white">
           <div className="bg-white p-20 text-black grid grid-cols-2 gap-5">
             <div className="flex flex-col justify-center gap-3">

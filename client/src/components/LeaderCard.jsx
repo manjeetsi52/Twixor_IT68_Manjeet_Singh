@@ -9,7 +9,7 @@ export const LeaderCard = ()=>{
                     return (
                       <div key={name} className="w-80">
                         <div
-                          className="h-96 rounded-2xl bg-cover bg-center relative overflow-hidden"
+                          className="h-96 rounded-2xl bg-cover bg-center relative overflow-hidden cursor-pointer hover:scale-105 transition"
                           style={{ backgroundImage: `url(${image_url})` }}
                         >
                           <div className="absolute inset-0 "></div>

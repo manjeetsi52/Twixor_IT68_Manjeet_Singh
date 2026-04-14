@@ -40,8 +40,8 @@ export const Footer = () => {
                     key={idx}
                     to={link.path}
                     className={({ isActive }) =>
-                      `pb-1 border-b-2 ${
-                        isActive ? "border-[#d50e8d]" : "border-transparent"
+                      `pb-1  ${
+                        isActive ? "text-[#d50e8d] font-bold" : "border-transparent"
                       }`
                     }
                   >

@@ -4,9 +4,9 @@ import { FaGreaterThan } from "react-icons/fa";
 
 export const Home = () => {
   return (
-    <>
+    <main>
       {/* video */}
-      <div>
+      <div className="">
         <video
           className="w-full"
           controls
@@ -39,7 +39,7 @@ export const Home = () => {
             and aspirations of hundreds of million people across geographies.
           </p>
           <div className="mt-10 py-1 px-3 rounded bg-[#d50e8d] font-semibold inline-block ">
-            <NavLink to={"/"}>Know More</NavLink>
+            <NavLink to={"/about"}>Know More</NavLink>
           </div>
         </div>
       </div>
@@ -47,13 +47,13 @@ export const Home = () => {
       {/* leaders */}
       <div className="contain p-5 flex flex-col gap-7 items-center">
         <h2 className="text-3xl font-bold">Meet our leaders</h2>
-        <div className="flex gap-5">
+        <div className="flex gap-10">
           {leaderData.map((elem) => {
             const { name, title, image_url } = elem;
             return (
               <div key={name} className="w-72">
                 <div
-                  className="h-80 rounded-2xl bg-cover bg-center relative overflow-hidden"
+                  className="h-80 rounded-2xl bg-cover bg-center relative overflow-hidden cursor-pointer hover:scale-105 transition"
                   style={{ backgroundImage: `url(${image_url})` }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
@@ -67,7 +67,7 @@ export const Home = () => {
           })}
         </div>
         <div className="py-1 px-3 rounded bg-[#d50e8d] font-semibold inline-block text-white ">
-          <NavLink>Know More</NavLink>
+          <NavLink to={'/about'}>Know More</NavLink>
         </div>
       </div>
 
@@ -96,7 +96,7 @@ export const Home = () => {
               robust roster of 27 sponsors...
             </p>
             <div >
-              <NavLink>
+              <NavLink to={'/newsroom'}>
              <img src="https://www.jiostar.com/wp-content/themes/jio-star/assets/img/nextpagechevron1ada.png" alt="Go to newsroom Link" className="w-10"/>
               </NavLink>
             </div>
@@ -118,6 +118,6 @@ export const Home = () => {
           })}
         </div>
       </div>
-    </> 
+    </main> 
   );
 };
