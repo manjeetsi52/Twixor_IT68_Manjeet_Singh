@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Entertainment } from "../components/newsroomcomp/Entertainment";
 import { Sports } from "../components/newsroomcomp/Sports";
 import { Corporate } from "../components/newsroomcomp/Corporate";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const items = [
   "All Logos",
@@ -13,6 +15,27 @@ const items = [
 
 export const Newsroom = () => {
   const [active, setActive] = useState("Entertainment");
+
+  const location = useLocation();
+  useEffect(() => {
+    const scrollToHash = () => {
+      if (location.hash) {
+        const id = location.hash.replace("#", "");
+        const el = document.getElementById(id);
+
+        if (el) {
+          const yOffset = -80; // adjust for fixed header
+          const y =
+            el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+    };
+
+    setTimeout(scrollToHash, 100);
+  }, [location.pathname, location.hash]);
+
   const componentMap = {
     Entertainment: <Entertainment />,
     Sports: <Sports />,
@@ -48,7 +71,9 @@ export const Newsroom = () => {
                   <button
                     onClick={() => setActive(tab)}
                     className={`cursor-pointer px-3 py-1 rounded ${
-                      active === tab ? "border-2 border-white" : "text-white"
+                      active === tab
+                        ? "border-2 border-white"
+                        : "border-2 border-transparent text-white"
                     }`}
                   >
                     {tab}
@@ -57,8 +82,8 @@ export const Newsroom = () => {
               ))}
             </ul>
           </div>
-            {/* E.S.C */}
-            {componentMap[active]}
+          {/* E.S.C */}
+          {componentMap[active]}
         </div>
 
         {/* media toolkit */}

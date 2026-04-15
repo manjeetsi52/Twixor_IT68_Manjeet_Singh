@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export const NewsCard = ({data}) => {
-  console.log(data)
   return (
     <div className="w-full p-5 ">
       <Swiper
@@ -23,8 +22,8 @@ export const NewsCard = ({data}) => {
           const { id, title, image, description } = elem;
 
           return (
-            <SwiperSlide key={id} className=" min-h-96">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-96">
+            <SwiperSlide key={id} className=" min-h-108">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-96 min-h-108">
                 <img
                   src={image}
                   alt={title}

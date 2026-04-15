@@ -3,7 +3,7 @@ import { NewsCard } from "./NewsCard";
 
 export const Corporate = () => {
   return (
-    <div className="h-full p-10 bg-black contain text-white mt-10">
+    <div className="h-full p-10 bg-black contain text-white mt-12" id="corporate">
       <div className="w-full p-5">
         <NewsCard data={corporate} />
       </div>

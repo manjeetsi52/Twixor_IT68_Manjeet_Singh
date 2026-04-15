@@ -21,7 +21,7 @@ export const Entertainment = () => {
   const dataToShow = categoryMap[category] || allEnt;
 
   return (
-    <div className="h-full p-10 bg-black contain text-white">
+    <div className="h-full p-10 bg-black contain text-white" id="entertainment">
       
       <span>Category</span>
 

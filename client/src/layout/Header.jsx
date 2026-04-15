@@ -67,11 +67,11 @@ export const Header = () => {
                   label="Portfolio"
                   to="/portfolio"
                   items={[
-                    { name: "Entertainment", path: "/portfolio/entertainment" },
-                    { name: "Sports", path: "/portfolio/sports" },
+                    { name: "Entertainment", path: "/portfolio/#entertainment" },
+                    { name: "Sports", path: "/portfolio/#sports" },
                     {
                       name: "Consumer Products",
-                      path: "/portfolio/consumer-products",
+                      path: "/portfolio/#corporate",
                     },
                   ]}
                 />
@@ -90,11 +90,9 @@ export const Header = () => {
                 <a
                   href="https://jobs.lever.co/jiostar"
                   target="_blank"
-                  className={({ isActive }) => {
-                    return isActive ? "border-b-2 border-white pb-1" : "";
-                  }}
+                  className="hover:border-b-2 hover:border-white pb-1"
                 >
-                  Carriers
+                  Careers
                 </a>
               </li>
               <li>
