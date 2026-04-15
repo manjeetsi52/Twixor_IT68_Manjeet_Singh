@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { IoSearchSharp } from "react-icons/io5";
-import { NavbarDropdown } from "../components/NavDropDown";
+import { NavbarDropdown } from "../components/header/NavDropDown";
 import { useEffect, useState } from "react";
 export const Header = () => {
   const [show, setShow] = useState(true);
@@ -67,11 +67,11 @@ export const Header = () => {
                   label="Portfolio"
                   to="/portfolio"
                   items={[
-                    { name: "Entertainment", path: "/portfolio/#entertainment" },
-                    { name: "Sports", path: "/portfolio/#sports" },
+                    { name: "Entertainment", path: "/portfolio?tab=Entertainment" },
+                    { name: "Sports", path: "/portfolio?tab=Sports" },
                     {
                       name: "Consumer Products",
-                      path: "/portfolio/#corporate",
+                      path: "/portfolio?tab=Consumer%20Products",
                     },
                   ]}
                 />

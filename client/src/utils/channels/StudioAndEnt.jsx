@@ -1,4 +1,4 @@
-export const studiosAndProductionData = [
+export const studioEntChannel = [
   {
     id: 1,
     name: "Jio Hotstar",

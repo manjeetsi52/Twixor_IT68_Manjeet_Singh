@@ -1,4 +1,4 @@
-import { leaders } from "../utils/Data";
+import { leaders } from "../../utils/Data/data";
 
 export const LeaderCard = ()=>{
     return (

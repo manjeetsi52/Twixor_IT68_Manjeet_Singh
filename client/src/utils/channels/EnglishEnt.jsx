@@ -1,4 +1,4 @@
-export const englishEntertainmentData = [
+export const ymeChannel = [
   {
     id: 1,
     name: "Jio Hotstar",

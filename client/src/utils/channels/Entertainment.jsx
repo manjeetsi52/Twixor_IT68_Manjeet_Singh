@@ -1,5 +1,5 @@
 
-export const channelEntertainment = [
+export const hindiChannel = [
     {
       id: 1,
       name: "Jio Hotstar",

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { footerLinks } from "../utils/Data";
+import { footerLinks } from "../utils/Data/data";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";

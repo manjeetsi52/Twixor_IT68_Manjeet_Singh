@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
-import { leaderData, portfolioData } from "../utils/Data";
-import { FaGreaterThan } from "react-icons/fa";
+import {  NavLink } from "react-router-dom";
+import { leaderData, portfolioData } from "../utils/Data/data";
 
 export const Home = () => {
+
   return (
     <main>
       {/* video */}
@@ -107,13 +107,13 @@ export const Home = () => {
       {/* portfolio */}
       <div className="flex flex-col items-center mt-5 gap-10 py-10 mb-5">
         <h2 className="text-3xl font-bold ">Portfolio</h2>
-        <div className="flex  justify-center gap-5 contain">
+        <div className="flex  justify-center gap-5 contain ">
           {portfolioData.map((elem, idx) => {
-            const { image_url } = elem;
+            const { image_url,route } = elem;
             return (
-              <div key={idx}>
-                <img src={image_url} alt="" className="w-104 rounded-lg" />
-              </div>
+              <NavLink to={route} key={idx} >
+                <img src={image_url} alt="" className="w-104 rounded-lg hover:scale-102 transition cursor-pointer"  />
+              </NavLink>
             );
           })}
         </div>

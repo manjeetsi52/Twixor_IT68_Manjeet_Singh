@@ -65,7 +65,7 @@ export const Newsroom = () => {
         {/* press */}
         <div className="text-white " id="press">
           <div className="w-full flex justify-center ">
-            <ul className="flex gap-5 border-3 p-2 bg-fuchsia-600 rounded-lg m-[-1.5rem] border-black font-semibold px-5 mb-3">
+            <ul className="flex gap-5 border-3 p-2 bg-[#d50e8d] rounded-lg m-[-1.5rem] border-black font-semibold px-5 mb-3">
               {["Entertainment", "Sports", "Corporate"].map((tab) => (
                 <li key={tab}>
                   <button

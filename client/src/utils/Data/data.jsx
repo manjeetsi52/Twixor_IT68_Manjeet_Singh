@@ -235,18 +235,21 @@ export const portfolioData =
       url: "https://www.jiostar.com/portfolio/?p=entertainment",
       image_url: "https://cdn.jiostar.com/jiostar/wp-content/uploads/2025/07/Picture1.jpg",
       alt_text: "Entertainment",
+      route:'/portfolio?tab=Entertainment'
     },
     {
       title: "Sports",
       url: "https://www.jiostar.com/portfolio/?p=sports",
       image_url: "https://cdn.jiostar.com/jiostar/wp-content/uploads/2025/08/Web-Banner-5-scaled.jpg",
       alt_text: "Sports",
+      route:'/portfolio?tab=Sports'
     },
     {
       title: "Consumer Products",
       url: "https://www.jiostar.com/portfolio/?p=consumer-products",
       image_url: "https://cdn.jiostar.com/jiostar/wp-content/uploads/2025/07/SITE-BG.jpg",
       alt_text: "Consumer Products",
+      route:'/portfolio?tab=Consumer%20Products'
     },
   ]
 

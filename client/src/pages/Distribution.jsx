@@ -1,7 +1,11 @@
 export const Distribution = () => {
   return (
     <>
-      <h1>Distribution</h1>
+      <section className="mt-20">
+        <div >
+          <img src="/images/distribution/dist.jpg" alt="" className="w-full" />
+        </div>
+      </section>
     </>
   );
 };

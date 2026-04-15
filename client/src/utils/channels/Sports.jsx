@@ -1,4 +1,4 @@
-export const channelSports = [
+export const sportsChDataChannel = [
   {
     id: 1,
     name: "Jio Hotstar",

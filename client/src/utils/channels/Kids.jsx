@@ -1,4 +1,4 @@
-export const kidsChannelsData = [
+export const kidsChannel = [
   {
     id: 1,
     name: "Jio Hotstar",

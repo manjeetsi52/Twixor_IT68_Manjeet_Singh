@@ -1,4 +1,4 @@
-export const regionalChannelsData = [
+export const regionalChannel = [
   {
     id: 1,
     name: "Jio Hotstar",

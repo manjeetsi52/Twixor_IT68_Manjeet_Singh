@@ -1,4 +1,4 @@
-export const infotainmentData = [
+export const infotainmentChannel = [
   {
     id: 1,
     name: "Jio Hotstar",

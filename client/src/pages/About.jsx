@@ -1,4 +1,4 @@
-import { LeaderCard } from "../components/LeaderCard";
+import { LeaderCard } from "../components/home/LeaderCard";
 
 export const About = () => {
   return (
